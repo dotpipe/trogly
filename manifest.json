@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Irondocks",
+  "description": "A Chrome Extension that loads irondocks.js and handles .irc files",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "content_security_policy": {
+    "extension_pages": "default-src http://127.0.0.1:* http://localhost:*;",
+    "script-src": ["'self'"]
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["http://*/*.irc", "https://*/*.irc"],
+      "js": ["./irondocks.js"]
+    }
+  ]
+}

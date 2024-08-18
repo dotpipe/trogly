@@ -1,0 +1,64 @@
+{
+    "header": {
+        "title": "Frogga",
+        "css": "styles.css"
+    },
+    "body": {
+        "tagname": "body",
+        "test": {
+            "tagname": "select",
+            "id": "tester",
+            "options": "key:value;key2:val2",
+            "style": "width:200;"
+        },
+        "table": {
+            "tagname": "table",
+            "style": "width:800px;height:600px;border:3px solid black;cell-spacing: 5px;",
+            "tr0": {
+                "tagname": "tr",
+                "td0": {
+                    "tagname": "td",
+                    "id": "sample",
+                    "textContent": "Click me!",
+                    "style": "vertical-align:bottom",
+                    "class": "yellow",
+                    "x-toggle": "sample:yellow;sample2:green;sample2:orange;"
+                },
+                "td1": {
+                    "tagname": "td",
+                    "textContent": "",
+                    "class": "orange"
+                }
+            },
+            "tr1": {
+                "tagname": "tr",
+                "td0": {
+                    "id": "sample2",
+                    "tagname": "td",
+                    "class": "green",
+                    "textContent": ""
+                },
+                "td1": {
+                    "tagname": "td",
+                    "textContent": "",
+                    "class": "red"
+                }
+            },
+            "tr2": {
+                "tagname": "tr",
+                "td0": {
+                    "tagname": "td",
+                    "tdv": {
+                        "modal": "j.json"
+                    },
+                    "class": "green"
+                },
+                "td1": {
+                    "tagname": "td",
+                    "textContent": "",
+                    "class": "blue"
+                }
+            }
+        }
+    }
+}

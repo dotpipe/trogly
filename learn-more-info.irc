@@ -1,0 +1,86 @@
+{
+  "table": {
+    "tagname": "table",
+    "id": "am-I-dumb",
+    "class": "",
+    "guitar1": {
+      "tagname": "tr",
+      "id": "guitar1",
+      "class": "sales-item",
+      "td1": {
+        "tagname": "td",
+        "id": "i-am-dumb",
+        "textContent": "Gibson Les Paul Standard",
+        "style": "font-weight: bold;",
+        "event": "click:500",
+        "class": "modala",
+        "method": "GET",
+        "ajax": "greeny.json",
+        "insert": "mid-guitar"
+      },
+      "td2": {
+        "tagname": "td",
+        "textContent": "Electric",
+        "style": "color: #666;"
+      },
+      "td3": {
+        "tagname": "td",
+        "textContent": "$2499.99",
+        "style": "color: #009688; font-weight: bold;"
+      },
+      "td4": {
+        "tagname": "td",
+        "id": "mid-guitar",
+        "rowspan": "3",
+        "style": "color: #009688; font-weight: bold;"
+      }
+    },
+    "guitar2": {
+      "tagname": "tr",
+      "id": "guitar2",
+      "class": "sales-item",
+      "td1": {
+        "tagname": "td",
+        "textContent": "Fender Stratocaster",
+        "id": "i-am-dumb2",
+        "style": "font-weight: bold;",
+        "event": "click:500",
+        "class": "modala",
+        "method": "GET",
+        "callback": "loadPage",
+        "ajax": "nutty.json",
+        "insert": "mid-guitar"
+      },
+      "td2": {
+        "tagname": "td",
+        "textContent": "Electric",
+        "style": "color: #666;"
+      },
+      "td3": {
+        "tagname": "td",
+        "textContent": "$1499.99",
+        "style": "color: #009688; font-weight: bold;"
+      }
+    },
+    "guitar3": {
+      "tagname": "tr",
+      "id": "guitar3",
+      "class": "sales-item",
+      "td1": {
+        "tagname": "td",
+        "textContent": "Taylor 214ce",
+        "class": "menu-item"
+      },
+      "td2": {
+        "tagname": "td",
+        "textContent": "Acoustic-Electric",
+        "class": "menu-item"
+      },
+      "td3": {
+        "tagname": "td",
+        "textContent": "$999.99",
+        "class": "menu-item"
+      }
+    }
+  }
+}

@@ -1,0 +1,130 @@
+
+<script>
+  var f = {
+  "header": {
+    "title": "Trogly's Guitar Show",
+    "css": "dark-theme.css"
+  },
+  "body": {
+    "children0": {
+      "h1": {
+        "tagname": "h1",
+        "id": "dark-mode-title",
+        "textContent": "Welcome to Trogly's Guitar Store",
+        "style": "color: #aaa; font-size: 24px;"
+      },
+      "p": {
+        "tagname": "p",
+        "id": "dark-mode-paragraph",
+        "textContent": "Explore our wide range of guitars and accessories.",
+        "style": "color: #666; font-size: 16px;"
+      },
+      "a": {
+        "tagname": "div",
+        "id": "menu-item",
+        "textContent": "Shop Now",
+        "class": "menu-item modala",
+        "ajax": "learn-more-info.irc",
+        "insert": "learn-more-content",
+        "style": "text-decoration: none;"
+      },
+
+      "button": {
+        "tagname": "button",
+        "id": "dark-mode-button",
+        "textContent": "Learn More",
+        "class": "menu-item modala",
+        "ajax": "reasons_to_work.json",
+        "callback": "loadPage",
+        "insert": "me",
+        "style": "background-color: #ffcc00; color: #fff; border: none; padding: 10px 20px; cursor: pointer;"
+      }
+    },
+    "children1": {
+      "menu1": {
+        "tagname": "div",
+        "id": "menu-container",
+        "style": "margin:15px; width: 100%; display: grid; gap: 10px; padding: 10px;",
+        "children": {
+          "menuItem1": {
+            "tagname": "a",
+            "textContent": "Home",
+            "class": "menu-item",
+            "href": "/",
+            "style": "margin: 5px;"
+          },
+          "menuItem2": {
+            "tagname": "a",
+            "textContent": "Products",
+            "class": "menu-item",
+            "href": "/products",
+            "style": "margin: 5px;"
+          },
+          "menuItem3": {
+            "tagname": "a",
+            "textContent": "About Us",
+            "class": "menu-item",
+            "href": "/about",
+            "style": "margin: 5px;"
+          },
+          "menuItem4": {
+            "tagname": "a",
+            "textContent": "Contact",
+            "class": "menu-item",
+            "href": "/contact",
+            "style": "margin: 5px;"
+          },
+          "menuItem5": {
+            "tagname": "a",
+            "textContent": "NGD",
+            "class": "menu-item",
+            "href": "/ngd",
+            "style": "margin: 5px;"
+          },
+          "menuItem6": {
+            "tagname": "a",
+            "textContent": "Appraisals",
+            "class": "menu-item",
+            "href": "/appraisals",
+            "style": "margin: 5px;"
+          },
+          "menuItem7": {
+            "tagname": "a",
+            "textContent": "Forwarding Service",
+            "class": "menu-item",
+            "href": "/forwarding",
+            "style": "margin: 5px;"
+          },
+          "menuItem8": {
+            "tagname": "a",
+            "textContent": "Merch",
+            "class": "menu-item",
+            "href": "/merch",
+            "style": "margin: 5px;"
+          },
+          "menuItem9": {
+            "tagname": "a",
+            "textContent": "Museum Tour",
+            "class": "menu-item",
+            "href": "/museum-tour",
+            "style": "margin: 5px;"
+          }
+        }
+      }
+    },
+    "children2": {
+      "tagname": "div",
+      "style": "display:block",
+      "id": "learn-more-content"
+    },
+    "children3": {
+      "tagname": "div",
+      "style": "display:block",
+      "id": "me"
+    },
+    "modal": "reasons_to_work.json"
+  }
+};
+// const g = JSON.parse(f);
+modala(f, document.body)
+</script>

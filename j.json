@@ -1,0 +1,17 @@
+{
+    "tagname": "div",
+    "lnk1": {
+        "tagname": "dyn",
+        "ajax": "https:\/\/github.com\/irondocks\/irondock",
+        "textContent": "GitHub + ",
+        "class": "redirect pipe",
+        "id": "necessary"
+    },
+    "lnk2": {
+        "tagname": "dyn",
+        "ajax": "https:\/\/paypal.me\/pirodock",
+        "textContent": "Donate",
+        "class": "redirect pipe",
+        "id": "ids-required"
+    }
+}
